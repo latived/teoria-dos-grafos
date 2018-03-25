@@ -8,6 +8,6 @@ algoritmos necessários para prova 1
 - [ ] Algoritmo de Dijkstra
 - [ ] Algoritmo de Bellmann-Ford
 - [ ] Algoritmo de Floyd
-- _outros..._
+- codes do udacity 
 
 

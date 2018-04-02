@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# Ainda não funciona!
+
 # Ele usa um vetor chamado anterior, para da conta da última linha das tabelas
 # que construímos. O conjunto A (Aberto) contém todos os vértices no início e o
 # F (Fechado) é vazio.

@@ -17,8 +17,7 @@ def dijkstra(G, v):
     F = []
     anterior = [0 for _ in range(len(G))]
     while (len(A) != 0):
-        r = G[v][0][0]
-        vr = G[v][0][1]
+        vr = 10e10
         for arestas in G[v]:
             if (arestas[1] < vr):
                 r = arestas[0]     # vértice mais próximo
@@ -27,13 +26,13 @@ def dijkstra(G, v):
         A.remove(r)
         S = intersect(A, [s[0] for s in G[r]])
         for i in S:
-            for arestas in G[r]:
+            for aresta in G[r]:
                 if i == arestas[0]:
                     ri = arestas[1]
-            p = min(ds[i], vr + ri)
-            if p < ds[i]:
-                ds[i] = p
-                anterior[i] = r
+                    p = min(ds[i], vr + ri)
+                    if p < ds[i]:
+                        ds[i] = p
+                        anterior[i] = r
 
     print(ds)
     print(anterior)
